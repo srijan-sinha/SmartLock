@@ -1,2 +1,2 @@
 # SmartLock
-RFID based locking system for shariing bicycle scheme
+RFID based locking system for sharing bicycle scheme
