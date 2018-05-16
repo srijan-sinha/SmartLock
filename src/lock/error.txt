@@ -1,0 +1,13 @@
+Arduino: 1.8.5 (Linux), Board: "LinkIt ONE"
+
+Warning: platform.txt from core 'MediaTek ARM7 EJ-S (32-bits) Boards' contains deprecated recipe.ar.pattern="{compiler.path}{compiler.ar.cmd}" {compiler.ar.flags} "{build.path}/{archive_file}" "{object_file}", automatically converted to recipe.ar.pattern="{compiler.path}{compiler.ar.cmd}" {compiler.ar.flags} "{archive_file_path}" "{object_file}". Consider upgrading this core.
+/home/srijansinha/.arduino15/packages/LinkItOneLinuxArduino/hardware/arm/1.1.17/libraries/LBattery/LBattery.cpp:15:21: fatal error: arduino.h: No such file or directory
+ #include "arduino.h"
+                     ^
+compilation terminated.
+exit status 1
+Error compiling for board LinkIt ONE.
+
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.

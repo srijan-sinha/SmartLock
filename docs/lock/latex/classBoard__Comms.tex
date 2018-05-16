@@ -1,0 +1,107 @@
+\hypertarget{classBoard__Comms}{}\section{Board\+\_\+\+Comms Class Reference}
+\label{classBoard__Comms}\index{Board\+\_\+\+Comms@{Board\+\_\+\+Comms}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classBoard__Comms_a2d588f74ca20911975bdcea2a4077619}{communicate} (String command)
+\item 
+const char $\ast$ \hyperlink{classBoard__Comms_a7e988ac21e512865c45ca93442e524e2}{next\+Token} (const char $\ast$src, char $\ast$buf)
+\item 
+String \hyperlink{classBoard__Comms_a852e0274caa35cadbf52b9ef3c4ce177}{update} (const char $\ast$str, char $\ast$lati, char $\ast$longi)
+\item 
+String \hyperlink{classBoard__Comms_a13ed23184f2872e5412fed57540bc64a}{read\+\_\+gps} (char $\ast$lati, char $\ast$longi)
+\item 
+void \hyperlink{classBoard__Comms_a77909c27d9abde3dc309b0cfbc86eb13}{convert\+Coords} (double latitude, double longitude, double \&lat\+\_\+return, double \&lon\+\_\+return)
+\begin{DoxyCompactList}\small\item\em Convert G\+P\+G\+GA coordinates (degrees-\/mins-\/secs) to true decimal-\/degrees. \end{DoxyCompactList}\item 
+String {\bfseries parse\+G\+P\+G\+GA} (const char $\ast$G\+P\+G\+G\+Astr, char $\ast$lati, char $\ast$longi)\hypertarget{classBoard__Comms_a8829ac3c5f2b2c471a12b424e3451b57}{}\label{classBoard__Comms_a8829ac3c5f2b2c471a12b424e3451b57}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{classBoard__Comms_ad455b779065380b068771202cff513ee}{get\+Int\+Number} (const char $\ast$s)
+\item 
+static double \hyperlink{classBoard__Comms_a66f2a51965051c75f0e8b09be661cd0a}{get\+Double\+Number} (const char $\ast$s)
+\item 
+static unsigned char \hyperlink{classBoard__Comms_a9ac1a04d81fc4ff6f594704924c5e2e1}{get\+Comma} (unsigned char num, const char $\ast$str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Board\+\_\+\+Comms@{Board\+\_\+\+Comms}!communicate@{communicate}}
+\index{communicate@{communicate}!Board\+\_\+\+Comms@{Board\+\_\+\+Comms}}
+\subsubsection[{\texorpdfstring{communicate(\+String command)}{communicate(String command)}}]{\setlength{\rightskip}{0pt plus 5cm}String Board\+\_\+\+Comms\+::communicate (
+\begin{DoxyParamCaption}
+\item[{String}]{command}
+\end{DoxyParamCaption}
+)}\hypertarget{classBoard__Comms_a2d588f74ca20911975bdcea2a4077619}{}\label{classBoard__Comms_a2d588f74ca20911975bdcea2a4077619}
+Setup the server connection, send the command and receive the response.\index{Board\+\_\+\+Comms@{Board\+\_\+\+Comms}!convert\+Coords@{convert\+Coords}}
+\index{convert\+Coords@{convert\+Coords}!Board\+\_\+\+Comms@{Board\+\_\+\+Comms}}
+\subsubsection[{\texorpdfstring{convert\+Coords(double latitude, double longitude, double \&lat\+\_\+return, double \&lon\+\_\+return)}{convertCoords(double latitude, double longitude, double &lat_return, double &lon_return)}}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+\_\+\+Comms\+::convert\+Coords (
+\begin{DoxyParamCaption}
+\item[{double}]{latitude, }
+\item[{double}]{longitude, }
+\item[{double \&}]{lat\+\_\+return, }
+\item[{double \&}]{lon\+\_\+return}
+\end{DoxyParamCaption}
+)}\hypertarget{classBoard__Comms_a77909c27d9abde3dc309b0cfbc86eb13}{}\label{classBoard__Comms_a77909c27d9abde3dc309b0cfbc86eb13}
+
+
+Convert G\+P\+G\+GA coordinates (degrees-\/mins-\/secs) to true decimal-\/degrees. 
+
+\begin{DoxyReturn}{Returns}
+-\/ 
+\end{DoxyReturn}
+\index{Board\+\_\+\+Comms@{Board\+\_\+\+Comms}!get\+Comma@{get\+Comma}}
+\index{get\+Comma@{get\+Comma}!Board\+\_\+\+Comms@{Board\+\_\+\+Comms}}
+\subsubsection[{\texorpdfstring{get\+Comma(unsigned char num, const char $\ast$str)}{getComma(unsigned char num, const char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char Board\+\_\+\+Comms\+::get\+Comma (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{num, }
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classBoard__Comms_a9ac1a04d81fc4ff6f594704924c5e2e1}{}\label{classBoard__Comms_a9ac1a04d81fc4ff6f594704924c5e2e1}
+Parse a char array to get comma.\index{Board\+\_\+\+Comms@{Board\+\_\+\+Comms}!get\+Double\+Number@{get\+Double\+Number}}
+\index{get\+Double\+Number@{get\+Double\+Number}!Board\+\_\+\+Comms@{Board\+\_\+\+Comms}}
+\subsubsection[{\texorpdfstring{get\+Double\+Number(const char $\ast$s)}{getDoubleNumber(const char *s)}}]{\setlength{\rightskip}{0pt plus 5cm}double Board\+\_\+\+Comms\+::get\+Double\+Number (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classBoard__Comms_a66f2a51965051c75f0e8b09be661cd0a}{}\label{classBoard__Comms_a66f2a51965051c75f0e8b09be661cd0a}
+Parse char array to get double.\index{Board\+\_\+\+Comms@{Board\+\_\+\+Comms}!get\+Int\+Number@{get\+Int\+Number}}
+\index{get\+Int\+Number@{get\+Int\+Number}!Board\+\_\+\+Comms@{Board\+\_\+\+Comms}}
+\subsubsection[{\texorpdfstring{get\+Int\+Number(const char $\ast$s)}{getIntNumber(const char *s)}}]{\setlength{\rightskip}{0pt plus 5cm}double Board\+\_\+\+Comms\+::get\+Int\+Number (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classBoard__Comms_ad455b779065380b068771202cff513ee}{}\label{classBoard__Comms_ad455b779065380b068771202cff513ee}
+Parse char array to get int.\index{Board\+\_\+\+Comms@{Board\+\_\+\+Comms}!next\+Token@{next\+Token}}
+\index{next\+Token@{next\+Token}!Board\+\_\+\+Comms@{Board\+\_\+\+Comms}}
+\subsubsection[{\texorpdfstring{next\+Token(const char $\ast$src, char $\ast$buf)}{nextToken(const char *src, char *buf)}}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Board\+\_\+\+Comms\+::next\+Token (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{src, }
+\item[{char $\ast$}]{buf}
+\end{DoxyParamCaption}
+)}\hypertarget{classBoard__Comms_a7e988ac21e512865c45ca93442e524e2}{}\label{classBoard__Comms_a7e988ac21e512865c45ca93442e524e2}
+Read next token.\index{Board\+\_\+\+Comms@{Board\+\_\+\+Comms}!read\+\_\+gps@{read\+\_\+gps}}
+\index{read\+\_\+gps@{read\+\_\+gps}!Board\+\_\+\+Comms@{Board\+\_\+\+Comms}}
+\subsubsection[{\texorpdfstring{read\+\_\+gps(char $\ast$lati, char $\ast$longi)}{read_gps(char *lati, char *longi)}}]{\setlength{\rightskip}{0pt plus 5cm}String Board\+\_\+\+Comms\+::read\+\_\+gps (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{lati, }
+\item[{char $\ast$}]{longi}
+\end{DoxyParamCaption}
+)}\hypertarget{classBoard__Comms_a13ed23184f2872e5412fed57540bc64a}{}\label{classBoard__Comms_a13ed23184f2872e5412fed57540bc64a}
+Read G\+PS data and store in G\+PS object info.\index{Board\+\_\+\+Comms@{Board\+\_\+\+Comms}!update@{update}}
+\index{update@{update}!Board\+\_\+\+Comms@{Board\+\_\+\+Comms}}
+\subsubsection[{\texorpdfstring{update(const char $\ast$str, char $\ast$lati, char $\ast$longi)}{update(const char *str, char *lati, char *longi)}}]{\setlength{\rightskip}{0pt plus 5cm}String Board\+\_\+\+Comms\+::update (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str, }
+\item[{char $\ast$}]{lati, }
+\item[{char $\ast$}]{longi}
+\end{DoxyParamCaption}
+)}\hypertarget{classBoard__Comms_a852e0274caa35cadbf52b9ef3c4ce177}{}\label{classBoard__Comms_a852e0274caa35cadbf52b9ef3c4ce177}
+Update the coordinates of lock by the data received from G\+PS.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Lock Code/Board\+\_\+\+Comms.\+h\item 
+Board\+\_\+\+Comms.\+cpp\end{DoxyCompactItemize}
